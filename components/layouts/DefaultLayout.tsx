@@ -1,4 +1,4 @@
-import { Container } from '@chakra-ui/react';
+import { Box, Container } from '@chakra-ui/react';
 import React from 'react';
 import Footer from '../common/Footer';
 import Navbar from '../common/Navbar';
@@ -9,11 +9,13 @@ type Props = {
 
 const DefaultLayout = ({ children }: Props) => {
   return (
-    <Container maxW="1200px">
+    <Box w={"full"}>
       <Navbar />
-      {children}
+      <Container maxW={"1200px"} mx="auto">
+       {children}
+      </Container>
       <Footer />
-    </Container>
+    </Box>
   );
 };
 
