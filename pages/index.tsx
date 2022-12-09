@@ -1,4 +1,4 @@
-import { Container, Heading } from '@chakra-ui/react';
+import { Container } from '@chakra-ui/react';
 import { ReactElement } from 'react';
 import Event from '../components/Event';
 import Contact from '../components/Contact';
@@ -9,7 +9,10 @@ import type { NextPageWithLayout } from './_app';
 
 const Home: NextPageWithLayout = () => {
   return (
-    <Container>
+    // changed container width
+    <Container
+      maxW={'1000px'}
+      margin={'auto'}>
       <Hero />
       <Team />
       <Event />
@@ -17,6 +20,7 @@ const Home: NextPageWithLayout = () => {
     </Container>
   );
 };
+
 Home.getLayout = function getLayout(page: ReactElement) {
   return <DefaultLayout>{page}</DefaultLayout>;
 };
