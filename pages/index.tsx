@@ -3,6 +3,7 @@ import { ReactElement } from 'react';
 import DefaultLayout from '../components/layouts/DefaultLayout';
 import type { NextPageWithLayout } from './_app';
 
+
 const Home: NextPageWithLayout = () => {
   return (
     <Container>
