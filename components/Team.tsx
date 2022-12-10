@@ -90,8 +90,9 @@ function Team({ }: Props) {
       marginLeft={10}>
       Our Enthusiastic team
     </Heading>
+
     <Box
-      marginTop={5}
+      marginTop={0}
       width={'100%'}
       overflow={"auto"}
       border={border}
@@ -328,12 +329,14 @@ function Team({ }: Props) {
 
             <Box>
 
-              <Heading size={'md'}
-                marginTop={2}>
-                Name
-              </Heading>
+              <Text
+                marginLeft={5}
+                fontSize={'md'}>
+                <Heading size={'md'}
+                  marginTop={2}>
+                  Name
+                </Heading>
 
-              <Text fontSize={'md'}>
                 Post : lorem ispin
                 <CollapseEx cardContent={cardContent1} />
               </Text>
@@ -351,6 +354,8 @@ function Team({ }: Props) {
 
           </Box>
         </Card>
+
+        {/* secondary cards repeated */}
 
         <Card border={border}
           boxShadow={'none'}
@@ -372,12 +377,14 @@ function Team({ }: Props) {
 
             <Box>
 
-              <Heading size={'md'}
-                marginTop={2}>
-                Name
-              </Heading>
+              <Text
+                marginLeft={5}
+                fontSize={'md'}>
+                <Heading size={'md'}
+                  marginTop={2}>
+                  Name
+                </Heading>
 
-              <Text fontSize={'md'}>
                 Post : lorem ispin
                 <CollapseEx cardContent={cardContent2} />
               </Text>
@@ -416,12 +423,14 @@ function Team({ }: Props) {
 
             <Box>
 
-              <Heading size={'md'}
-                marginTop={2}>
-                Name
-              </Heading>
+              <Text
+                marginLeft={5}
+                fontSize={'md'}>
+                <Heading size={'md'}
+                  marginTop={2}>
+                  Name
+                </Heading>
 
-              <Text fontSize={'md'}>
                 Post : lorem ispin
                 <CollapseEx cardContent={cardContent3} />
               </Text>
@@ -460,12 +469,14 @@ function Team({ }: Props) {
 
             <Box>
 
-              <Heading size={'md'}
-                marginTop={2}>
-                Name
-              </Heading>
+              <Text
+                marginLeft={5}
+                fontSize={'md'}>
+                <Heading size={'md'}
+                  marginTop={2}>
+                  Name
+                </Heading>
 
-              <Text fontSize={'md'}>
                 Post : lorem ispin
                 <CollapseEx cardContent={cardContent4} />
               </Text>
@@ -504,12 +515,14 @@ function Team({ }: Props) {
 
             <Box>
 
-              <Heading size={'md'}
-                marginTop={2}>
-                Name
-              </Heading>
+              <Text
+                marginLeft={5}
+                fontSize={'md'}>
+                <Heading size={'md'}
+                  marginTop={2}>
+                  Name
+                </Heading>
 
-              <Text fontSize={'md'}>
                 Post : lorem ispin
                 <CollapseEx cardContent={cardContent5} />
               </Text>
@@ -528,6 +541,7 @@ function Team({ }: Props) {
           </Box>
         </Card>
 
+        {/* secondary cards are repeated till here */}
 
       </HStack>
 
