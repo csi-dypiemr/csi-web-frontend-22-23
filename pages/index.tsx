@@ -6,7 +6,7 @@ import Event from '../components/common/Event';
 
 const Home: NextPageWithLayout = () => {
   return (
-    <Container>
+    <Container maxW={'container.xl'}>
       <Heading>Hello CSI</Heading>
       <Flex>
       <Event />
