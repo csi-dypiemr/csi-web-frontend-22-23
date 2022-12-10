@@ -1,4 +1,4 @@
-import { Container, Heading } from '@chakra-ui/react';
+import { Container, Flex} from '@chakra-ui/react';
 import { ReactElement } from 'react';
 import Event from '../components/Event';
 import Contact from '../components/Contact';
@@ -9,10 +9,12 @@ import type { NextPageWithLayout } from './_app';
 
 const Home: NextPageWithLayout = () => {
   return (
-    <Container>
+    <Container maxW={'container.xl'}>
       <Hero />
       <Team />
+      <Flex>
       <Event />
+      </Flex>
       <Contact />
     </Container>
   );
