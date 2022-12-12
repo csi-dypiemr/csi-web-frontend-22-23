@@ -7,6 +7,7 @@ import DefaultLayout from '../components/layouts/DefaultLayout';
 import Team from '../components/Team';
 import type { NextPageWithLayout } from './_app';
 
+
 const Home: NextPageWithLayout = () => {
   return (
     <Container>
