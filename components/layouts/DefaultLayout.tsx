@@ -10,7 +10,7 @@ type Props = {
 const DefaultLayout = ({ children }: Props) => {
   return (
     <Box w={"full"}>
-      <Navbar />
+      {/* <Navbar /> */}
       <Container maxW={"1200px"} mx="auto">
        {children}
       </Container>
