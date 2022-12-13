@@ -6,10 +6,13 @@ import Hero from '../components/Hero';
 import DefaultLayout from '../components/layouts/DefaultLayout';
 import Team from '../components/Team';
 import type { NextPageWithLayout } from './_app';
+import Navbar from '../components/common/Navbar';
+import Footer from '../components/common/Footer';
 
 const Home: NextPageWithLayout = () => {
   return (
-    <Container>
+    <Container maxW="100%">
+      <Navbar/>
       <Hero />
       <Team />
       <Event />
