@@ -13,8 +13,8 @@ const breakpoints = {
 const card1 = { name: "Name1", post: "lorem isn", description: "card text 1" }
 
 // add border to elements for outline view
-// var border: string = 'none';
-var border: string = 'solid #252526 1px';
+var border: string = 'none';
+// var border: string = 'solid #252526 1px';
 
 type Props = {};
 
