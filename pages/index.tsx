@@ -1,22 +1,24 @@
-import { Container, Heading } from '@chakra-ui/react';
+import { Container } from '@chakra-ui/react';
 import { ReactElement } from 'react';
 import Event from '../components/Event';
-import Contact from '../components/Contact';
-import Hero from '../components/Hero';
+import Title from '../components/Title';
 import DefaultLayout from '../components/layouts/DefaultLayout';
 import Team from '../components/Team';
 import type { NextPageWithLayout } from './_app';
 
 const Home: NextPageWithLayout = () => {
   return (
-    <Container>
-      <Hero />
-      <Team />
+    // changed container width
+    <Container
+      maxW={'1200px'}
+      marginInline={'auto'}>
+      <Title />
       <Event />
-      <Contact />
+      <Team />
     </Container>
   );
 };
+
 Home.getLayout = function getLayout(page: ReactElement) {
   return <DefaultLayout>{page}</DefaultLayout>;
 };

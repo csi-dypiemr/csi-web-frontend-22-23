@@ -3,16 +3,23 @@ import React from 'react';
 import Footer from '../common/Footer';
 import Navbar from '../common/Navbar';
 
+var border: string = 'solid #252526 1px';
+
 type Props = {
   children: React.ReactNode;
 };
 
 const DefaultLayout = ({ children }: Props) => {
   return (
-    <Container maxW="1200px">
+    <Container
+      border={border}
+      maxW="1200px"
+      marginInline={'auto'}>
+
       <Navbar />
       {children}
       <Footer />
+      
     </Container>
   );
 };
