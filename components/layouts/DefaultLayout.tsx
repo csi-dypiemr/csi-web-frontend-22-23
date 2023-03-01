@@ -2,7 +2,6 @@ import { Container } from '@chakra-ui/react';
 import React from 'react';
 import Footer from '../common/Footer';
 import Navbar from '../common/Navbar';
-import Team from '../Team';
 
 var border: string = 'solid #252526 1px';
 
@@ -14,7 +13,8 @@ const DefaultLayout = ({ children }: Props) => {
   return (
     <Container
       border={border}
-      maxW="1200px">
+      maxW="1200px"
+      marginInline={'auto'}>
 
       <Navbar />
       {children}
