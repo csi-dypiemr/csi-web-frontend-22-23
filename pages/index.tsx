@@ -4,21 +4,32 @@ import Event from '../components/Event';
 import Title from '../components/Title';
 import DefaultLayout from '../components/layouts/DefaultLayout';
 import Team from '../components/Team';
+import Values from '../components/values';
+
+{/* changed below this */}
 import TeamSec from '../components/TeamSec';
+import KnowMore from '../components/KnowMore';
+{/* changed above this */}
+
 import type { NextPageWithLayout } from './_app';
-import Contribute from '../components/contribute';
+import styles from "../styles/Home.module.css"
 
 const Home: NextPageWithLayout = () => {
   return (
     // changed container width
     <Container
-      maxW={'1200px'}
+      className={styles.home}
+      maxW={'1500px'}
       marginInline={'auto'}>
       <Title />
-      <TeamSec></TeamSec>
-      <Contribute></Contribute>
-      {/* <Event />
-      <Team /> */}
+      <Values />
+      <Event />
+
+      {/* changed below this */}
+      <TeamSec />
+      <KnowMore />
+      {/* changed above this */}
+      <Team />
     </Container>
   );
 };

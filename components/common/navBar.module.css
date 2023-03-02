@@ -1,0 +1,29 @@
+.navBar {
+    padding-inline: 7.5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    display: flex;
+    background-color: #181823;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    border: black 2px solid;
+}
+.navLinks {
+    display: flex;   
+    gap: 1em;
+    text-decoration: none;
+    color: white;
+}
+.navtitle {
+    color: white;
+    font-weight: bold;
+}
+.joinBtn {
+    height: 100%;
+    border-radius: 0.2em;
+    padding-top: 0.2em;
+    padding-bottom: 0.5em;
+    background: #C0EEF2;
+    padding-inline: 1em;
+}

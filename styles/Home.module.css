@@ -1,3 +1,4 @@
+/* 
 .container {
   padding: 0 2rem;
 }
@@ -106,8 +107,10 @@
 .logo {
   height: 1em;
   margin-left: 0.5rem;
-}
+} 
+*/
 
+/* 
 @media (max-width: 600px) {
   .grid {
     width: 100%;
@@ -126,4 +129,126 @@
   .logo img {
     filter: invert(1);
   }
+} 
+*/
+
+
+/* changed below this */
+/* home styling */
+.home {
+  background-color: #181823;
+}
+
+/* navBar styling  */
+.navBar {
+  padding-inline: 7.5%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  display: flex;
+  background-color: #181823;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+}
+.navLinks {
+  display: flex;   
+  gap: 1em;
+  text-decoration: none;
+  color: white;
+}
+.navtitle {
+  color: white;
+  font-weight: bold;
+}
+.joinBtn {
+  height: 100%;
+  border-radius: 0.2em;
+  padding-top: 0.2em;
+  max-width: 100px;
+  text-align: center;
+  cursor: pointer;
+  padding-bottom: 0.5em;
+  background: #C0EEF2;
+  font-weight: bold;
+  color: #050536;
+  padding-inline: 1em;
+}
+.joinBtn:hover {
+  box-shadow: 1px 1px 3px #107fff;
+}
+
+/* title page styling */
+.titlePage {
+  background-color: #181823;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.titlePageContent {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.75em;
+  width: 75%;
+  color: white;
+}
+.titlePageTitle {
+  font-size: 2.2em;
+}
+.titlePageDesc {
+  text-align: center;
+  color: #d0d7df;
+  width: 60%;
+}
+
+/* values page styling */
+.valuesPage {
+  background-color: #181823;
+  padding-inline: 5em;
+  height: 700px;
+}
+.valuePageContent{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2em;
+}
+.valuePageContent .title {
+  color: #ebeef3;
+  font-size: 2em;
+  font-weight: bold;
+  width: fit-content;
+  border-bottom: solid white 3px;
+  padding-bottom: 0.2em;
+  padding-right: 1em;
+  margin-bottom:1em ;
+}
+.valuePageContent .values {
+  display: flex;
+  color: white;
+  justify-content: space-around;
+  gap: 5em;
+}
+.valuePageContent .valuepart {
+  height: 3em;
+  border: solid 1px white;
+  width: fit-content;
+  margin: auto;
+}
+.valuePageContent .valuesnippit  {
+  display: flex;
+  gap: 0.5em;
+}
+.valuePageContent .valuesnippit  img {
+  margin-top: 1em;
+  width: 1.5em;
+  height: 1.5em;
+}
+.valuePageContent .valuesnippit  h1 {
+  font-size:2.1em;
+}
+.valuePageContent .valuesnippit  p {
+  font-size: 0.8em;
 }
