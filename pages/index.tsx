@@ -4,6 +4,7 @@ import Event from '../components/Event';
 import Title from '../components/Title';
 import DefaultLayout from '../components/layouts/DefaultLayout';
 import Team from '../components/Team';
+import TeamSec from '../components/TeamSec';
 import type { NextPageWithLayout } from './_app';
 
 const Home: NextPageWithLayout = () => {
@@ -13,6 +14,7 @@ const Home: NextPageWithLayout = () => {
       maxW={'1200px'}
       marginInline={'auto'}>
       <Title />
+      <TeamSec></TeamSec>
       <Event />
       <Team />
     </Container>

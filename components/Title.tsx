@@ -1,6 +1,5 @@
 import React from 'react';
-import { Container } from '@chakra-ui/react';
-
+import { Container,Box } from '@chakra-ui/react';
 // const breakpoints = {
 //   sm: '480px',
 //   md: '600px',
@@ -13,7 +12,9 @@ import { Container } from '@chakra-ui/react';
 type Props = {};
 
 const Title = (props: Props) => {
-  return <div>Title</div>;
+  return <div><Box bg='tomato' w='100%' p={4} color='white'>
+  This is the Box
+</Box></div>;
 };
 
 export default Title;
