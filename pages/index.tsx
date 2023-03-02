@@ -6,6 +6,7 @@ import DefaultLayout from '../components/layouts/DefaultLayout';
 import Team from '../components/Team';
 import TeamSec from '../components/TeamSec';
 import type { NextPageWithLayout } from './_app';
+import Contribute from '../components/contribute';
 
 const Home: NextPageWithLayout = () => {
   return (
@@ -15,6 +16,7 @@ const Home: NextPageWithLayout = () => {
       marginInline={'auto'}>
       <Title />
       <TeamSec></TeamSec>
+      <Contribute></Contribute>
       <Event />
       <Team />
     </Container>

@@ -12,9 +12,7 @@ import { Container,Box } from '@chakra-ui/react';
 type Props = {};
 
 const Title = (props: Props) => {
-  return <div><Box bg='tomato' w='100%' p={4} color='white'>
-  This is the Box
-</Box></div>;
+  return <div></div>;
 };
 
 export default Title;
