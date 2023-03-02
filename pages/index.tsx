@@ -17,8 +17,8 @@ const Home: NextPageWithLayout = () => {
       <Title />
       <TeamSec></TeamSec>
       <Contribute></Contribute>
-      <Event />
-      <Team />
+      {/* <Event />
+      <Team /> */}
     </Container>
   );
 };
